@@ -9,7 +9,7 @@ main() {
         if crackpw \
                2>/dev/null
         then
-            echo 'Found after %s tries:\t%s' "$n" "$line"
+            printf 'Found after %s tries:\t%s' "$n" "$line"
             return
         else
             printf 'Trying\t%s\t%s\n' "$n" "$line"
